@@ -38,9 +38,9 @@ const weatherBackgrounds = {
 
 document.getElementById('getWeather').addEventListener('click', function() {
     const city = document.getElementById('city').value;
-    const apiKey = '50f218eed58dabf3ac55a16f3ec39817'; // Your OpenWeatherMap API key
+    const apiKey = 'API-KEY'; // Your OpenWeatherMap API key
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    const unsplashApiKey = 'A_6-R08B3qVvmFAoZv2TwvU7D1xnRr29hyl3JI34QsM'; // Your Unsplash API key
+    const unsplashApiKey = 'API-KEY'; // Your Unsplash API key
     const unsplashUrl = `https://api.unsplash.com/search/photos?query=${city}&client_id=${unsplashApiKey}`;
 
     // Clear previous weather data
