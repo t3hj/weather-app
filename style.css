@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/default-background.jpg') no-repeat center center fixed; /* Ensure this image exists */
+    background-size: cover;
+    color: white; /* Ensure text is readable */
+}
+
+#app {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6); /* More faint background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: white; /* Ensure text inside the app is also white */
+    background-size: cover; /* Ensure the background image covers the entire box */
+    margin-top: 20px; /* Add margin to ensure the box is not starting too high */
+    max-width: 600px; /* Limit the width of the app box */
+    width: 100%;
+    margin: 20px auto; /* Center the app box horizontally */
+    max-height: 80vh; /* Limit the height of the app box */
+    overflow-y: auto; /* Make the app box scrollable if content overflows */
+}
+
+.city-name {
+    background-size: cover; /* Ensure the background image covers the entire box */
+    background-position: center; /* Center the background image */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: white; /* Ensure text color is white for better readability */
+    position: relative; /* Ensure the glass box is positioned within the city background */
+}
+
+.city-name .glass-box {
+    background: rgba(255, 255, 255, 0.2); /* Increase transparency */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: white; /* Ensure text color is white for better readability */
+    display: inline-block; /* Only encase the city name */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #ff7e5f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #feb47b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#weather {
+    animation: fadeIn 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+    color: white; /* Ensure text color is white for better readability */
+}
+
+i.wi {
+    font-size: 48px;
+    margin: 10px 0;
+    animation: fadeIn 2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+.forecast-day {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+    background: rgba(255, 255, 255, 0.6); /* More faint background for better readability */
+    background-size: cover; /* Ensure the background image covers the entire box */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Ensure the background image does not repeat */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+    color: white; /* Ensure text color is white for better readability */
+}
